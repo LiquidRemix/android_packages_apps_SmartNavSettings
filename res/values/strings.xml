@@ -258,4 +258,10 @@
     <string name="dlg_reset_android">Default</string>
     <string name="dlg_reset_bliss">Custom</string>
 
+    <!-- Stock navbar -->
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_summary">Customize the buttons displayed on navbar</string>
+    <string name="nav_gesture_settings_title">Gestures</string>
+    <string name="nav_gesture_settings_summary">Toggle the gestures for navbar</string>
+
 </resources>

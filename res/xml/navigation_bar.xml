@@ -15,26 +15,14 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen
+    android:title="@string/bottom_nav_navigation_title"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <SwitchPreference
         android:key="navbar_visibility"
         android:title="@string/navbar_visibility" />
-
-    <com.liquid.liquidlounge.preferences.SystemSettingSwitchPreference
-        android:key="pixel_nav_animation"
-        android:title="@string/pixel_navbar_anim_title"
-        android:summary="@string/pixel_navbar_anim_summary"
-        android:dependency="navbar_visibility"
-        android:defaultValue="true" />
-
-    <com.liquid.liquidlounge.preferences.SystemSettingSwitchPreference
-        android:key="one_hand_mode_enabled"
-        android:title="@string/one_hand_mode_title"
-        android:summary="@string/one_hand_mode_summary"
-        android:dependency="navbar_visibility"
-        android:defaultValue="false" />
 
     <PreferenceCategory
         android:key="category_navbar_interface"
@@ -63,7 +51,7 @@
             android:key="default_settings"
             android:title="@string/default_settings"
             android:summary="@string/default_settings_summary"
-            android:fragment="com.android.settings.gestures.SwipeUpGestureSettings" />
+            android:fragment="com.android.settings.smartnav.StockSettings" />
 
     </PreferenceCategory>
     
@@ -100,6 +88,7 @@
             android:title="@string/pulse_settings"
             android:summary="@string/pulse_settings_summary"
             android:fragment="com.android.settings.smartnav.PulseSettings" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
